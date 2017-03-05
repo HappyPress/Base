@@ -12,7 +12,7 @@
 		<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'happypressbase_author_bio_avatar_size', 68 ) ); ?>
 	</div> <!-- /.author-avatar -->
 	<div class="author-description">
-		<h2><?php printf( esc_html__( 'About %s', 'happypress-base' ), get_the_author() ); ?></h2>
+		<h2><?php printf( esc_html__( 'About %s', 'base' ), get_the_author() ); ?></h2>
 		<p><?php the_author_meta( 'description' ); ?></p>
 		<p class="social-meta">
 			<?php if ( get_the_author_meta( 'url' ) ) { ?>
@@ -30,7 +30,7 @@
 		</p>
 		<div class="author-link">
 			<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-				<?php printf( wp_kses( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'happypress-base' ), array(
+				<?php printf( wp_kses( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'base' ), array(
 					'span' => array(
 						'class' => array(),
 					),

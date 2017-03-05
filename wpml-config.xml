@@ -1,6 +1,6 @@
 <wpml-config>
 	<admin-texts>
-		<key name="happypress-base">
+		<key name="base">
 			<key name="footer_content" />
 		</key>
 	</admin-texts>

@@ -12,13 +12,13 @@
 		<?php happypressbase_posted_on(); ?>
 	</header> <!-- /.entry-header -->
 	<div class="entry-content">
-		<?php the_content( wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'happypress-base' ), array(
+		<?php the_content( wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'base' ), array(
 			'span' => array(
 				'class' => array(),
 			),
 		) ) ); ?>
 		<?php wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'happypress-base' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base' ),
 			'after' => '</div>',
 			'link_before' => '<span class="page-numbers">',
 			'link_after' => '</span>',
@@ -30,6 +30,6 @@
 			// Only show the tags on the Single Post page
 			happypressbase_entry_meta();
 } ?>
-		<?php edit_post_link( esc_html__( 'Edit', 'happypress-base' ) . ' <i class="fa fa-angle-right" aria-hidden="true"></i>', '<div class="edit-link">', '</div>' ); ?>
+		<?php edit_post_link( esc_html__( 'Edit', 'base' ) . ' <i class="fa fa-angle-right" aria-hidden="true"></i>', '<div class="edit-link">', '</div>' ); ?>
 	</footer> <!-- /.entry-meta -->
 </article> <!-- /#post -->

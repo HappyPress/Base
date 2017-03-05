@@ -11,13 +11,13 @@
 
 <article id="post-0" class="post no-results not-found">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'happypress-base' ); ?></h1>
+		<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'base' ); ?></h1>
 	</header><!-- /.entry-header -->
 
 	<div class="entry-content">
 		<?php if ( is_home() && current_user_can( 'edit_posts' ) ) { ?>
 
-			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'happypress-base' ), array(
+			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'base' ), array(
 				'a' => array(
 					'href' => array(),
 				),
@@ -25,12 +25,12 @@
 
 		<?php } elseif ( is_search() ) { ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'happypress-base' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'base' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php } else { ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'happypress-base' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'base' ); ?></p>
 			<?php get_search_form(); ?>
 
 		<?php } ?>

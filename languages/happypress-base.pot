@@ -1,8 +1,8 @@
-# Copyright (C) 2016 happypress-base
-# This file is distributed under the same license as the happypress-base package.
+# Copyright (C) 2016 base
+# This file is distributed under the same license as the base package.
 msgid ""
 msgstr ""
-"Project-Id-Version: happypress-base\n"
+"Project-Id-Version: base\n"
 "Report-Msgid-Bugs-To: https://happypress.com/premium\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

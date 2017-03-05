@@ -84,7 +84,7 @@ Install from the WordPress Theme Directory:
 
 1. Click on the Appearance > Themes menu option in the WordPress Dashboard
 2. Click the Install Themes tab at the top of the page
-3. Type 'happypress-base' in the search field, without the quotes, and then click the Search button
+3. Type 'base' in the search field, without the quotes, and then click the Search button
 4. Click the Install Now link below the HappyPress Base preview thumbnail
 5. Once the theme has been installed, click the Activate link
 
@@ -109,7 +109,7 @@ Since HappyPress Base is a starter theme to kick off your own awesome theme, the
 
 or, to put it another way...
 
-Search for:'happypress-base'
+Search for:'base'
  Replace with:'yourawesomethemename'
 Search for:happypressbase_
  Replace with:yourawesomethemename_

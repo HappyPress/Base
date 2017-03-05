@@ -38,9 +38,9 @@ if ( ! function_exists( 'happypressbase_setup' ) ) {
 		 * Make theme available for translation
 		 * Translations can be filed in the /languages/ directory
 		 * If you're building a theme based on HappyPress Base, use a find and replace
-		 * to change 'happypress-base' to the name of your theme in all the template files
+		 * to change 'base' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'happypress-base', trailingslashit( get_template_directory() ) . 'languages' );
+		load_theme_textdomain( 'base', trailingslashit( get_template_directory() ) . 'languages' );
 
 		// This theme styles the visual editor with editor-style.css to match the theme style.
 		add_editor_style();
@@ -56,7 +56,7 @@ if ( ! function_exists( 'happypressbase_setup' ) ) {
 
 		// This theme uses wp_nav_menu() in one location
 		register_nav_menus( array(
-				'menu-1' => esc_html__( 'Primary Menu', 'happypress-base' )
+				'menu-1' => esc_html__( 'Primary Menu', 'base' )
 			) );
 
 		// This theme supports a variety of post formats
@@ -148,12 +148,12 @@ if ( ! function_exists( 'happypressbase_fonts_url' ) ) {
 		/* translators: If there are characters in your language that are not supported by Rubik, translate this to 'off'.
 		 * Do not translate into your own language.
 		 */
-		$bodyFont = _x( 'on', 'Rubik font: on or off', 'happypress-base' );
+		$bodyFont = _x( 'on', 'Rubik font: on or off', 'base' );
 
 		/* translators: To add an additional Rubik character subset specific to your language, translate this to 'greek', 'cyrillic' or 'vietnamese'.
 		 * Do not translate into your own language.
 		 */
-		$subset = _x( 'no-subset', 'Rubik font: add new subset (cyrillic)', 'happypress-base' );
+		$subset = _x( 'no-subset', 'Rubik font: add new subset (cyrillic)', 'base' );
 
 		if ( 'cyrillic' == $subset ) {
 			$subsets .= ',cyrillic';
@@ -162,7 +162,7 @@ if ( ! function_exists( 'happypressbase_fonts_url' ) ) {
 		/* translators: If there are characters in your language that are not supported by Comfortaa, translate this to 'off'.
 		 * Do not translate into your own language.
 		 */
-		$headerFont = _x( 'on', 'Comfortaa font: on or off', 'happypress-base' );
+		$headerFont = _x( 'on', 'Comfortaa font: on or off', 'base' );
 
 		if ( 'off' !== $bodyFont || 'off' !== $headerFont ) {
 			$font_families = array();
@@ -219,9 +219,9 @@ add_filter( 'mce_css', 'happypressbase_mce_css' );
 if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 	function happypressbase_widgets_init() {
 		register_sidebar( array(
-				'name' => esc_html__( 'Main Sidebar', 'happypress-base' ),
+				'name' => esc_html__( 'Main Sidebar', 'base' ),
 				'id' => 'sidebar-1',
-				'description' => esc_html__( 'Appears in the sidebar on all posts and pages', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the sidebar on all posts and pages', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -229,9 +229,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Blog Sidebar', 'happypress-base' ),
+				'name' => esc_html__( 'Blog Sidebar', 'base' ),
 				'id' => 'sidebar-2',
-				'description' => esc_html__( 'Appears in the sidebar on the blog and archive pages only', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the sidebar on the blog and archive pages only', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -239,9 +239,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Single Post Sidebar', 'happypress-base' ),
+				'name' => esc_html__( 'Single Post Sidebar', 'base' ),
 				'id' => 'sidebar-3',
-				'description' => esc_html__( 'Appears in the sidebar on single posts only', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the sidebar on single posts only', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -249,9 +249,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Page Sidebar', 'happypress-base' ),
+				'name' => esc_html__( 'Page Sidebar', 'base' ),
 				'id' => 'sidebar-4',
-				'description' => esc_html__( 'Appears in the sidebar on pages only', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the sidebar on pages only', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -259,9 +259,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'First Footer Widget Area', 'happypress-base' ),
+				'name' => esc_html__( 'First Footer Widget Area', 'base' ),
 				'id' => 'sidebar-footer1',
-				'description' => esc_html__( 'Appears in the footer sidebar', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the footer sidebar', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -269,9 +269,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Second Footer Widget Area', 'happypress-base' ),
+				'name' => esc_html__( 'Second Footer Widget Area', 'base' ),
 				'id' => 'sidebar-footer2',
-				'description' => esc_html__( 'Appears in the footer sidebar', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the footer sidebar', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -279,9 +279,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Third Footer Widget Area', 'happypress-base' ),
+				'name' => esc_html__( 'Third Footer Widget Area', 'base' ),
 				'id' => 'sidebar-footer3',
-				'description' => esc_html__( 'Appears in the footer sidebar', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the footer sidebar', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -289,9 +289,9 @@ if ( ! function_exists( 'happypressbase_widgets_init' ) ) {
 			) );
 
 		register_sidebar( array(
-				'name' => esc_html__( 'Fourth Footer Widget Area', 'happypress-base' ),
+				'name' => esc_html__( 'Fourth Footer Widget Area', 'base' ),
 				'id' => 'sidebar-footer4',
-				'description' => esc_html__( 'Appears in the footer sidebar', 'happypress-base' ),
+				'description' => esc_html__( 'Appears in the footer sidebar', 'base' ),
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 				'after_widget' => '</aside>',
 				'before_title' => '<h3 class="widget-title">',
@@ -342,11 +342,11 @@ if ( ! function_exists( 'happypressbase_scripts_styles' ) ) {
 		// If using a child theme, auto-load the parent theme style.
 		// Props to Justin Tadlock for this recommendation - http://justintadlock.com/archives/2014/11/03/loading-parent-styles-for-child-themes
 		if ( is_child_theme() ) {
-			wp_enqueue_style( 'happypress-base-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
+			wp_enqueue_style( 'base-parent-style', trailingslashit( get_template_directory_uri() ) . 'style.css' );
 		}
 
 		// Enqueue the default WordPress stylesheet
-		wp_enqueue_style( 'happypress-base-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'base-style', get_stylesheet_uri() );
 
 		/**
 		 * Register and enqueue our scripts
@@ -359,7 +359,7 @@ if ( ! function_exists( 'happypressbase_scripts_styles' ) ) {
 		}
 
 		//vanilla javascript to create the responsive menu.
-		wp_enqueue_script( 'happypress-base-vendors', trailingslashit( get_template_directory_uri() ) . 'js/vendors.min.js', array('jquery'), '1.0.0', false );
+		wp_enqueue_script( 'base-vendors', trailingslashit( get_template_directory_uri() ) . 'js/vendors.min.js', array('jquery'), '1.0.0', false );
 
 	}
 }
@@ -414,7 +414,7 @@ if ( ! function_exists( 'happypressbase_comment' ) ) {
 			// Display trackbacks differently than normal comments ?>
 			<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 				<article id="comment-<?php comment_ID(); ?>" class="pingback">
-					<p><?php esc_html_e( 'Pingback:', 'happypress-base' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( '(Edit)', 'happypress-base' ), '<span class="edit-link">', '</span>' ); ?></p>
+					<p><?php esc_html_e( 'Pingback:', 'base' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( '(Edit)', 'base' ), '<span class="edit-link">', '</span>' ); ?></p>
 				</article> <!-- #comment-##.pingback -->
 			<?php
 			break;
@@ -429,27 +429,27 @@ if ( ! function_exists( 'happypressbase_comment' ) ) {
 						printf( '<cite class="fn">%1$s %2$s</cite>',
 							get_comment_author_link(),
 							// If current post author is also comment author, make it known visually.
-							( $comment->user_id === $post->post_author ) ? '<span> ' . esc_html__( 'Post author', 'happypress-base' ) . '</span>' : '' );
+							( $comment->user_id === $post->post_author ) ? '<span> ' . esc_html__( 'Post author', 'base' ) . '</span>' : '' );
 						printf( '<a href="%1$s"><time itemprop="datePublished" datetime="%2$s">%3$s</time></a>',
 							esc_url( get_comment_link( $comment->comment_ID ) ),
 							get_comment_time( 'c' ),
 							/* Translators: 1: date, 2: time */
-							sprintf( esc_html__( '%1$s at %2$s', 'happypress-base' ), get_comment_date(), get_comment_time() )
+							sprintf( esc_html__( '%1$s at %2$s', 'base' ), get_comment_date(), get_comment_time() )
 						);
 						?>
 					</header> <!-- .comment-meta -->
 
 					<?php if ( '0' == $comment->comment_approved ) { ?>
-						<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'happypress-base' ); ?></p>
+						<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'base' ); ?></p>
 					<?php } ?>
 
 					<section class="comment-content comment">
 						<?php comment_text(); ?>
-						<?php edit_comment_link( esc_html__( 'Edit', 'happypress-base' ), '<p class="edit-link">', '</p>' ); ?>
+						<?php edit_comment_link( esc_html__( 'Edit', 'base' ), '<p class="edit-link">', '</p>' ); ?>
 					</section> <!-- .comment-content -->
 
 					<div class="reply">
-						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => wp_kses( __( 'Reply <span>&darr;</span>', 'happypress-base' ), array( 'span' => array() ) ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => wp_kses( __( 'Reply <span>&darr;</span>', 'base' ), array( 'span' => array() ) ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 					</div> <!-- .reply -->
 				</article> <!-- #comment-## -->
 			<?php
@@ -473,11 +473,11 @@ if ( ! function_exists( 'happypressbase_comment_form_default_fields' ) ) {
 		$req = get_option( 'require_name_email' );
 		$aria_req = ( $req ? ' aria-required="true"' : "" );
 
-		$fields[ 'author' ] = '<p class="comment-form-author">' . '<label for="author">' . esc_html__( 'Name', 'happypress-base' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>';
+		$fields[ 'author' ] = '<p class="comment-form-author">' . '<label for="author">' . esc_html__( 'Name', 'base' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>';
 
-		$fields[ 'email' ] =  '<p class="comment-form-email"><label for="email">' . esc_html__( 'Email', 'happypress-base' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>';
+		$fields[ 'email' ] =  '<p class="comment-form-email"><label for="email">' . esc_html__( 'Email', 'base' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>';
 
-		$fields[ 'url' ] =  '<p class="comment-form-url"><label for="url">' . esc_html__( 'Website', 'happypress-base' ) . '</label>' . '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>';
+		$fields[ 'url' ] =  '<p class="comment-form-url"><label for="url">' . esc_html__( 'Website', 'base' ) . '</label>' . '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>';
 
 		return $fields;
 
@@ -497,7 +497,7 @@ add_action( 'comment_form_default_fields', 'happypressbase_comment_form_default_
 if ( ! function_exists( 'happypressbase_comment_form_field_comment' ) ) {
 	function happypressbase_comment_form_field_comment( $field ) {
 		if ( !happypressbase_is_woocommerce_active() || ( happypressbase_is_woocommerce_active() && !is_product() ) ) {
-			$field = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'happypress-base' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
+			$field = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'base' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
 		}
 		return $field;
 
@@ -563,16 +563,16 @@ if ( ! function_exists( 'happypressbase_posted_on' ) ) {
 		);
 
 		// Return the Categories as a list
-		$categories_list = get_the_category_list( esc_html__( ' ', 'happypress-base' ) );
+		$categories_list = get_the_category_list( esc_html__( ' ', 'base' ) );
 
 		// Translators: 1: Permalink 2: Title 3: No. of Comments
 		$comments = sprintf( '<span class="comments-link"><i class="fa fa-comment" aria-hidden="true"></i> <a href="%1$s">%2$s</a></span>',
 			esc_url( get_comments_link() ),
-			( get_comments_number() > 0 ? sprintf( _n( '%1$s Comment', '%1$s Comments', get_comments_number(), 'happypress-base' ), get_comments_number() ) : esc_html__( 'No Comments', 'happypress-base' ) )
+			( get_comments_number() > 0 ? sprintf( _n( '%1$s Comment', '%1$s Comments', get_comments_number(), 'base' ), get_comments_number() ) : esc_html__( 'No Comments', 'base' ) )
 		);
 
 		// Translators: 1: Date 2: Author 3: Categories 4: Comments
-		printf( wp_kses( __( '<div class="header-meta">%1$s%2$s<span class="post-categories">%3$s</span>%4$s</div>', 'happypress-base' ), array(
+		printf( wp_kses( __( '<div class="header-meta">%1$s%2$s<span class="post-categories">%3$s</span>%4$s</div>', 'base' ), array(
 			'div' => array (
 				'class' => array() ),
 			'span' => array(
@@ -597,12 +597,12 @@ if ( ! function_exists( 'happypressbase_entry_meta' ) ) {
 		// Return the Tags as a list
 		$tag_list = "";
 		if ( get_the_tag_list() ) {
-			$tag_list = get_the_tag_list( '<span class="post-tags">', esc_html__( ' ', 'happypress-base' ), '</span>' );
+			$tag_list = get_the_tag_list( '<span class="post-tags">', esc_html__( ' ', 'base' ), '</span>' );
 		}
 
 		// Translators: 1 is tag
 		if ( $tag_list ) {
-			printf( wp_kses( __( '<i class="fa fa-tag" aria-hidden="true"></i> %1$s', 'happypress-base' ), array( 'i' => array( 'class' => array() ) ) ), $tag_list );
+			printf( wp_kses( __( '<i class="fa fa-tag" aria-hidden="true"></i> %1$s', 'base' ), array( 'i' => array( 'class' => array() ) ) ), $tag_list );
 		}
 	}
 }
@@ -653,7 +653,7 @@ add_filter( 'the_content_more_link', 'happypressbase_remove_more_jump_link' );
  */
 if ( ! function_exists( 'happypressbase_continue_reading_link' ) ) {
 	function happypressbase_continue_reading_link() {
-		return '&hellip;<p><a class="more-link" href="'. esc_url( get_permalink() ) . '">' . wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'happypress-base' ), array( 'span' => array(
+		return '&hellip;<p><a class="more-link" href="'. esc_url( get_permalink() ) . '">' . wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'base' ), array( 'span' => array(
 				'class' => array() ) ) ) . '</a></p>';
 	}
 }
@@ -684,9 +684,9 @@ if ( ! function_exists( 'happypressbase_get_credits' ) ) {
 	function happypressbase_get_credits() {
 		$output = '';
 		$output = sprintf( '<p>%1$s <a href="%2$s">%3$s</a></p>',
-			esc_html__( 'Proudly powered by', 'happypress-base' ),
-			esc_url( esc_html__( 'http://wordpress.org/', 'happypress-base' ) ),
-			esc_html__( 'WordPress', 'happypress-base' )
+			esc_html__( 'Proudly powered by', 'base' ),
+			esc_url( esc_html__( 'http://wordpress.org/', 'base' ) ),
+			esc_html__( 'WordPress', 'base' )
 		);
 
 		return $output;
@@ -827,9 +827,9 @@ add_filter( 'loop_shop_per_page', 'happypressbase_shop_product_count', 20 );
  */
 if ( ! function_exists( 'happypressbase_woocommerce_pagination_args' ) ) {
 	function happypressbase_woocommerce_pagination_args( $paginationargs ) {
-		$paginationargs[ 'prev_text'] = wp_kses( __( '<i class="fa fa-angle-left"></i> Previous', 'happypress-base' ), array( 'i' => array(
+		$paginationargs[ 'prev_text'] = wp_kses( __( '<i class="fa fa-angle-left"></i> Previous', 'base' ), array( 'i' => array(
 			'class' => array() ) ) );
-		$paginationargs[ 'next_text'] = wp_kses( __( 'Next <i class="fa fa-angle-right"></i>', 'happypress-base' ), array( 'i' => array(
+		$paginationargs[ 'next_text'] = wp_kses( __( 'Next <i class="fa fa-angle-right"></i>', 'base' ), array( 'i' => array(
 			'class' => array() ) ) );
 		return $paginationargs;
 	}

@@ -37,7 +37,7 @@
 
 <div id="wrapper" class="hfeed site">
 
-	<div class="visuallyhidden skip-link"><a href="#primary"><?php esc_html_e( 'Skip to main content', 'happypress-base' ); ?></a></div>
+	<div class="visuallyhidden skip-link"><a href="#primary"><?php esc_html_e( 'Skip to main content', 'base' ); ?></a></div>
 
 	<div id="headercontainer">
 
@@ -48,8 +48,8 @@
 
 			<div class="grid-60 tablet-grid-60">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'happypress-base-theme' ); ?></h3>
-					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'happypress-base' ); ?>"><?php esc_html_e( 'Skip to content', 'happypress-base-theme' ); ?></a></div>
+					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'base' ); ?></h3>
+					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'base' ); ?>"><?php esc_html_e( 'Skip to content', 'base' ); ?></a></div>
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'navigation nav-menu', 'container_class' => 'navigation_container' ) ); ?>
 				</nav> <!-- /.site-navigation.main-navigation -->
 			</div> <!-- /.grid-60 -->
