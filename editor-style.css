@@ -1,5 +1,5 @@
 /*
-Theme Name: HappyPress Base
+Theme Name: HappyBase
 Description: Used to style the TinyMCE editor.
 */
 
@@ -29,7 +29,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
-	vertical-align: baseline;
+	vertical-align: happybaseline;
 }
 
 
@@ -257,7 +257,7 @@ sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
-	vertical-align: baseline;
+	vertical-align: happybaseline;
 }
 
 sup {

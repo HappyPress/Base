@@ -4,8 +4,8 @@
  *
  * Description: Displays a browser full-width page for use with page builders like Visual Composer, Beaver Builder and the Divi Builder.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 
 get_header(); ?>

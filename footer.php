@@ -6,19 +6,19 @@
  * There are also four footer widgets displayed. These will be displayed from
  * one to four columns, depending on how many widgets are active.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?>
 
-	<?php	do_action( 'happypressbase_after_woocommerce' ); ?>
+	<?php	do_action( 'happybase_after_woocommerce' ); ?>
 	<div id="footercontainer">
 
 		<?php get_sidebar( 'footer' ); ?>
 
 		<div class="grid-container smallprint">
 			<div class="grid-100">
-				<?php echo happypressbase_get_credits() ?>
+				<?php echo happybase_get_credits() ?>
 			</div> <!-- /.grid-100 -->
 		</div> <!-- /.grid-container.smallprint -->
 

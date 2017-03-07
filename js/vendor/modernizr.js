@@ -1,5 +1,5 @@
 /*! modernizr 3.3.1 (Custom Build) | MIT *
- * https://modernizr.com/download/?-applicationcache-audio-backgroundblendmode-backgroundcliptext-backgroundsize-bgpositionxy-bgrepeatspace_bgrepeatround-bgsizecover-borderimage-borderradius-boxshadow-boxsizing-canvas-canvastext-checked-cookies-cryptography-cssanimations-csscalc-csschunit-csscolumns-cssescape-cssexunit-cssfilters-cssgradients-csshairline-csshyphens_softhyphens_softhyphensfind-cssinvalid-cssmask-csspointerevents-csspositionsticky-csspseudoanimations-csspseudotransitions-cssreflections-cssremunit-cssresize-cssscrollbar-csstransforms-csstransforms3d-csstransitions-cssvalid-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-cubicbezierrange-displaytable-ellipsis-emoji-exiforientation-flexbox-flexboxlegacy-flexboxtweener-flexwrap-fontface-fullscreen-generatedcontent-geolocation-hashchange-hiddenscroll-history-hsla-ie8compat-indexeddb-inlinesvg-input-inputtypes-intl-json-lastchild-localstorage-mediaqueries-multiplebgs-nthchild-objectfit-opacity-overflowscrolling-picture-postmessage-preserve3d-regions-rgba-scrollsnappoints-sessionstorage-shapes-siblinggeneral-smil-subpixelfont-supports-svg-svgasimg-svgclippaths-svgfilters-svgforeignobject-target-templatestrings-textalignlast-textshadow-touchevents-unicoderange-userselect-video-websockets-websqldatabase-webworkers-wrapflow-domprefixes-hasevent-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/
+ * https://modernizr.com/download/?-applicationcache-audio-backgroundblendmode-backgroundcliptext-backgroundsize-bgpositionxy-bgrepeatspace_bgrepeatround-bgsizecover-borderimage-borderradius-boxshadow-boxsizing-canvas-canvastext-checked-cookies-cryptography-cssanimations-csscalc-csschunit-csscolumns-cssescape-cssexunit-cssfilters-cssgradients-csshairline-csshyphens_softhyphens_softhyphensfind-cssinvalid-cssmask-csspointerevents-csspositionsticky-csspseudoanimations-csspseudotransitions-cssreflections-cssremunit-cssresize-cssscrollbar-csstransforms-csstransforms3d-csstransitions-cssvalid-cssvhunit-cssvmaxunit-cssvminunit-cssvwunit-cubicbezierrange-displaytable-ellipsis-emoji-exiforientation-flexbox-flexboxlegacy-flexboxtweener-flexwrap-fontface-fullscreen-generatedcontent-geolocation-hashchange-hiddenscroll-history-hsla-ie8compat-indexeddb-inlinesvg-input-inputtypes-intl-json-lastchild-localstorage-mediaqueries-multiplebgs-nthchild-objectfit-opacity-overflowscrolling-picture-postmessage-preserve3d-regions-rgba-scrollsnappoints-sessionstorage-shapes-siblinggeneral-smil-subpixelfont-supports-svg-svgasimg-svgclippaths-svgfilters-svgforeignobject-target-templatestrings-textalignlast-textshadow-touchevents-unicoderange-userselect-video-websockets-websqldatahappybase-webworkers-wrapflow-domprefixes-hasevent-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/
 ! function(window, document, undefined) {
 	function is(e, t) {
 		return typeof e === t
@@ -22,11 +22,11 @@
 	function setClasses(e) {
 		var t = docElement.className,
 			n = Modernizr._config.classPrefix || "";
-		if (isSVG && (t = t.baseVal), Modernizr._config.enableJSClass) {
+		if (isSVG && (t = t.happybaseVal), Modernizr._config.enableJSClass) {
 			var r = new RegExp( "(^|\\s)" + n + "no-js(\\s|$)" );
 			t = t.replace( r, "$1" + n + "js$2" )
 		}
-		Modernizr._config.enableClasses && (t += " " + n + e.join( " " + n ), isSVG ? docElement.className.baseVal = t : docElement.className = t)
+		Modernizr._config.enableClasses && (t += " " + n + e.join( " " + n ), isSVG ? docElement.className.happybaseVal = t : docElement.className = t)
 	}
 
 	function createElement() {
@@ -233,7 +233,7 @@
 		} catch (t) {
 			return ! 1
 		}
-	}), Modernizr.addTest( "websqldatabase", "openDatabase" in window ), Modernizr.addTest("svgfilters", function() {
+	}), Modernizr.addTest( "websqldatahappybase", "openDatahappybase" in window ), Modernizr.addTest("svgfilters", function() {
 		var e = ! 1;
 		try {
 			e = "SVGFEColorMatrixElement" in window && 2 == SVGFEColorMatrixElement.SVG_FECOLORMATRIX_TYPE_SATURATE
@@ -362,7 +362,7 @@
 			t = 12 * e,
 			n = createElement( "canvas" ),
 			r = n.getContext( "2d" );
-		return r.fillStyle = "#f00", r.textBaseline = "top", r.font = "32px Arial", r.fillText( "🐨", 0, 0 ), 0 !== r.getImageData( t, t, 1, 1 ).data[0]
+		return r.fillStyle = "#f00", r.textHappyBaseline = "top", r.font = "32px Arial", r.fillText( "🐨", 0, 0 ), 0 !== r.getImageData( t, t, 1, 1 ).data[0]
 	}), Modernizr.addTest("video", function() {
 		var e = createElement( "video" ),
 			t = ! 1;
@@ -663,7 +663,7 @@
 			addTest("exiforientation", 2 !== e.width, {
 				aliases: ["exif-orientation"]
 			})
-		}, e.src = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAABgASAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigD/2Q=="
+		}, e.src = "data:image/jpeg;happybase64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QAiRXhpZgAASUkqAAgAAAABABIBAwABAAAABgASAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAABAAIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigD/2Q=="
 	}), Modernizr.addTest( "svgasimg", document.implementation.hasFeature( "http://www.w3.org/TR/SVG11/feature#Image", "1.1" ) );
 	var testProp = ModernizrProto.testProp = function(e, t, n) {
 		return testProps( [e], undefined, t, n )
@@ -803,7 +803,7 @@
 	try {
 		indexeddb = prefixed( "indexedDB", window )
 	} catch (e) {}
-	Modernizr.addTest( "indexeddb", ! ! indexeddb ), indexeddb && Modernizr.addTest( "indexeddb.deletedatabase", "deleteDatabase" in indexeddb ), Modernizr.addTest( "intl", ! ! prefixed( "Intl", window ) ), Modernizr.addTest( "backgroundblendmode", prefixed( "backgroundBlendMode", "text" ) ), Modernizr.addTest("objectfit", ! ! prefixed( "objectFit" ), {
+	Modernizr.addTest( "indexeddb", ! ! indexeddb ), indexeddb && Modernizr.addTest( "indexeddb.deletedatahappybase", "deleteDatahappybase" in indexeddb ), Modernizr.addTest( "intl", ! ! prefixed( "Intl", window ) ), Modernizr.addTest( "backgroundblendmode", prefixed( "backgroundBlendMode", "text" ) ), Modernizr.addTest("objectfit", ! ! prefixed( "objectFit" ), {
 		aliases: ["object-fit"]
 	}), Modernizr.addTest("wrapflow", function() {
 		var e = prefixed( "wrapFlow" );

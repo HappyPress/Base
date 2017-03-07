@@ -1,4 +1,4 @@
-=== HappyPress Base ===
+=== HappyBase ===
 Contributors: ahortin
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-logo, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 4.5
@@ -7,20 +7,20 @@ Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The HappyPress Base base theme is a clean, fast and simple platform for creating beautiful, responsive custom WordPress themes. It's a simple starter theme built on HTML5 & CSS3. At its core is a fluid, responsive grid based on percentages, making for a flexible layout. It incorporates a set of common templates, support for WordPress Post Formats and the gorgeous, retina friendly Font Awesome icon font. The HappyPress Base base theme is WooCommerce compatible, Multilingual Ready (WPML) and translateable. It's also compatible with a wide range of popular page builders such as Visual Composer, Beaver Builder, Divi Builder, SiteOrigin Page Builder and the Elementor Page Builder.
+The HappyBase happybase theme is a clean, fast and simple platform for creating beautiful, responsive custom WordPress themes. It's a simple starter theme built on HTML5 & CSS3. At its core is a fluid, responsive grid happybased on percentages, making for a flexible layout. It incorporates a set of common templates, support for WordPress Post Formats and the gorgeous, retina friendly Font Awesome icon font. The HappyBase happybase theme is WooCommerce compatible, Multilingual Ready (WPML) and translateable. It's also compatible with a wide range of popular page builders such as Visual Composer, Beaver Builder, Divi Builder, SiteOrigin Page Builder and the Elementor Page Builder.
 
 
 == Description ==
 
-The HappyPress Base base theme is a clean, fast and simple platform for creating beautiful, responsive custom WordPress themes. It's a simple and elegant starter theme built on HTML5 & CSS3. At its core is a fluid, responsive grid based on percentages. This means not only is it flexible, it's extremely easy to customise.
+The HappyBase happybase theme is a clean, fast and simple platform for creating beautiful, responsive custom WordPress themes. It's a simple and elegant starter theme built on HTML5 & CSS3. At its core is a fluid, responsive grid happybased on percentages. This means not only is it flexible, it's extremely easy to customise.
 
-If you do decide to use a child theme with HappyPress Base, there's no need to use CSS @import or even enqueue the parent stylesheet. HappyPress Base will automatically enqueue the parent stylesheet for you. Cool eh!
+If you do decide to use a child theme with HappyBase, there's no need to use CSS @import or even enqueue the parent stylesheet. HappyBase will automatically enqueue the parent stylesheet for you. Cool eh!
 
-HappyPress's base is a fluid, responsive grid based on percentages. It uses [Normalize](https://github.com/necolas/normalize.css) to make sure that browsers render all elements more consistently and [Modernizr](http://modernizr.com) for detecting HTML5 and CSS3 browser capabilities along with some default stylings from HTML5 Boilerplate. It also incorporates the gorgeous [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon font by Dave Gandy.
+HappyPress's happybase is a fluid, responsive grid happybased on percentages. It uses [Normalize](https://github.com/necolas/normalize.css) to make sure that browsers render all elements more consistently and [Modernizr](http://modernizr.com) for detecting HTML5 and CSS3 browser capabilities along with some default stylings from HTML5 Boilerplate. It also incorporates the gorgeous [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon font by Dave Gandy.
 
-The main navigation uses the standard WordPress menu. Support for dropdown menus is included by default. If you'd like to envoke a button toggle for the main navigation menu on small screens, simply uncomment the two lines from the happypressbase_scripts_styles() function within functions.php to register and enqueue the necessary javascript file.
+The main navigation uses the standard WordPress menu. Support for dropdown menus is included by default. If you'd like to envoke a button toggle for the main navigation menu on small screens, simply uncomment the two lines from the happybase_scripts_styles() function within functions.php to register and enqueue the necessary javascript file.
 
-If you're looking to build an eCommerce website, HappyPress Base supports the excellent WooCommerce plugin, straight out of the box.
+If you're looking to build an eCommerce website, HappyBase supports the excellent WooCommerce plugin, straight out of the box.
 
 Templates
 
@@ -34,7 +34,7 @@ All the standard WordPress Post Formats are supported. These include; Aside, Gal
 
 Widgets
 
-Widgets are a great way of adding extra content to your site and HappyPress Base has a whole assortment of them.
+Widgets are a great way of adding extra content to your site and HappyBase has a whole assortment of them.
 
 Main Sidebar: Appears in the sidebar on posts and pages
 Blog Sidebar: Appears in the sidebar on the blog and archive pages only
@@ -71,21 +71,21 @@ WooCommerce is a WordPress eCommerce toolkit that helps you sell anything. Beaut
 
 There are three ways to install your theme. It can be installed by manually uploading the files to the themes folder using an FTP application,it can be installed by downloading from the WordPress Theme Directory within the Dashboard or it can be installed by uploading the theme ZIP file that you downloaded.
 
-Use the following instructions to install & activate HappyPress Base using your preferred method.
+Use the following instructions to install & activate HappyBase using your preferred method.
 
 Manual installation:
 
-1. Unzip the files from the HappyPress Base zip file that you downloaded
-2. Upload the HappyPress Base folder to your /wp-content/themes/ directory
+1. Unzip the files from the HappyBase zip file that you downloaded
+2. Upload the HappyBase folder to your /wp-content/themes/ directory
 3. Click on the Appearance > Themes menu option in the WordPress Dashboard
-4. Click the Activate link below the HappyPress Base preview thumbnail
+4. Click the Activate link below the HappyBase preview thumbnail
 
 Install from the WordPress Theme Directory:
 
 1. Click on the Appearance > Themes menu option in the WordPress Dashboard
 2. Click the Install Themes tab at the top of the page
-3. Type 'base' in the search field, without the quotes, and then click the Search button
-4. Click the Install Now link below the HappyPress Base preview thumbnail
+3. Type 'happybase' in the search field, without the quotes, and then click the Search button
+4. Click the Install Now link below the HappyBase preview thumbnail
 5. Once the theme has been installed, click the Activate link
 
 Install by uploading the theme zip file:
@@ -100,20 +100,20 @@ Install by uploading the theme zip file:
 
 == Getting Started ==
 
-Since HappyPress Base is a starter theme to kick off your own awesome theme, the first thing you want to do is copy the HappyPress Base folder and change the name to something else. You'll then need to do a three-step find and replace on the name in all the templates.
+Since HappyBase is a starter theme to kick off your own awesome theme, the first thing you want to do is copy the HappyBase folder and change the name to something else. You'll then need to do a three-step find and replace on the name in all the templates.
 
-1. Search for HappyPress Base inside single quotations to capture the text domain.
-2. Search for happypressbase_ to capture all the function names.
-3. Search for HappyPress Base with a space before it to replace all the occurrences of it in comments.
+1. Search for HappyBase inside single quotations to capture the text domain.
+2. Search for happybase_ to capture all the function names.
+3. Search for HappyBase with a space before it to replace all the occurrences of it in comments.
    (You'd replace this with the capitalized version of your theme name.)
 
 or, to put it another way...
 
-Search for:'base'
+Search for:'happybase'
  Replace with:'yourawesomethemename'
-Search for:happypressbase_
+Search for:happybase_
  Replace with:yourawesomethemename_
-Search for: HappyPress Base
+Search for: HappyBase
  Replace with: YourAwesomeThemeName
 
 Lastly, update the stylesheet header in style.css and either update or delete this readme.txt file.
@@ -128,7 +128,7 @@ This program is free software; you can redistribute it and/or modify it under th
 
 == Credits ==
 
-HappyPress Base is packed full of the following wholesome goodness:
+HappyBase is packed full of the following wholesome goodness:
 
 - [Unsemantic](http://unsemantic.com), which is licensed under GPL and MIT license
 - [Modernizr](http://modernizr.com), which is licensed under the MIT license
@@ -137,7 +137,7 @@ HappyPress Base is packed full of the following wholesome goodness:
 
 
 
-HappyPress Base includes the following awesomeness:
+HappyBase includes the following awesomeness:
 
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome) icon font, which is licensed under SIL Open Font License and MIT License
 - [Rubik font](https://fonts.google.com/specimen/Open+Sans), which is licensed under Apache License Version 2.0

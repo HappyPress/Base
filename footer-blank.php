@@ -6,8 +6,8 @@
  * There are also four footer widgets displayed. These will be displayed from
  * one to four columns, depending on how many widgets are active.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.3.3
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?>
 

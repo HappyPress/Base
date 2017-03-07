@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="wrapper">
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.3.3
+ * @package HappyBase
+ * @since HappyBase 1.0.0
  */
 ?><!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->

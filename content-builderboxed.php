@@ -2,8 +2,8 @@
 /**
  * The template used for displaying page content in page-builderboxed.php
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.3.2
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?>
 
@@ -11,7 +11,7 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'happybase' ),
 			'after' => '</div>',
 			'link_before' => '<span class="page-numbers">',
 			'link_after' => '</span>',

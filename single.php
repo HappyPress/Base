@@ -2,8 +2,8 @@
 /**
  * The Template for displaying all single posts.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 
 get_header(); ?>

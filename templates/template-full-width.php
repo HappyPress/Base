@@ -5,8 +5,8 @@
  * Description: Displays a full-width page, with no sidebar. This template is great for pages
  * containing large amounts of content.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 
 get_header(); ?>

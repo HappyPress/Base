@@ -4,8 +4,8 @@
  *
  * Displays all of the <head> section and everything up till <div id="maincontentcontainer">
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?><!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
@@ -37,19 +37,19 @@
 
 <div id="wrapper" class="hfeed site">
 
-	<div class="visuallyhidden skip-link"><a href="#primary"><?php esc_html_e( 'Skip to main content', 'base' ); ?></a></div>
+	<div class="visuallyhidden skip-link"><a href="#primary"><?php esc_html_e( 'Skip to main content', 'happybase' ); ?></a></div>
 
 	<div id="headercontainer">
 
 		<header id="masthead" class="grid-container site-header" role="banner">
 			<div class="grid-40 tablet-grid-40 site-title">
-				<?php happypressbase_the_custom_logo() ?>
+				<?php happybase_the_custom_logo() ?>
 			</div> <!-- /.grid-40.site-title -->
 
 			<div class="grid-60 tablet-grid-60">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'base' ); ?></h3>
-					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'base' ); ?>"><?php esc_html_e( 'Skip to content', 'base' ); ?></a></div>
+					<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'happybase' ); ?></h3>
+					<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'happybase' ); ?>"><?php esc_html_e( 'Skip to content', 'happybase' ); ?></a></div>
 						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_class' => 'navigation nav-menu', 'container_class' => 'navigation_container' ) ); ?>
 				</nav> <!-- /.site-navigation.main-navigation -->
 			</div> <!-- /.grid-60 -->
@@ -67,4 +67,4 @@
 			</div> <!-- /.banner.grid-container` -->
 		</div> <!-- /#bannercontainer -->
 	<?php } ?>
-	<?php	do_action( 'happypressbase_before_woocommerce' ); ?>
+	<?php	do_action( 'happybase_before_woocommerce' ); ?>

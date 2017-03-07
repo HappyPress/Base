@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - .:/var/www/html/wp-content/themes/base
+      - .:/var/www/html/wp-content/themes/happybase
     environment:
       WORDPRESS_DB_PASSWORD: mDFFPk2CcC9#httUh5F3
 

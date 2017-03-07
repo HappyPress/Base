@@ -3,8 +3,8 @@
  * The sidebar containing the footer widget areas.
  * If there are no active widgets, the sidebar will be hidden completely.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?>
 
@@ -21,7 +21,7 @@ for ( $x = 1; $x <= 4; $x++ ) {
 if ( $FooterSidebars > 0 ) { ?>
 	<footer class="site-footer grid-container" role="contentinfo">
 		<?php
-		// Work out the container class name based on the number of active footer sidebars
+		// Work out the container class name happybased on the number of active footer sidebars
 		$ContainerClass = 'grid-' . intval( 100 / $FooterSidebars ) . ' tablet-grid-' . intval( 100 / $FooterSidebars ) . ' mobile-grid-100';
 
 		// Display the active footer sidebars

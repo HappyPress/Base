@@ -2,15 +2,15 @@
 /**
  * The default template for displaying content. Used for both single and index/archive/search.
  *
- * @package HappyPress Base
- * @since HappyPress Base 1.0
+ * @package HappyBase
+ * @since HappyBase 1.0
  */
 ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) { ?>
 			<div class="featured-post">
-				<?php esc_html_e( 'Featured post', 'base' ); ?>
+				<?php esc_html_e( 'Featured post', 'happybase' ); ?>
 			</div>
 		<?php } ?>
 		<header class="entry-header">
@@ -22,14 +22,14 @@
 					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 				</h1>
 			<?php } // is_single() ?>
-			<?php happypressbase_posted_on(); ?>
+			<?php happybase_posted_on(); ?>
 			<?php if ( has_post_thumbnail() && !is_search() ) {
 				if ( is_single() ) {
-					the_post_thumbnail( 'happypress_base_theme_post_feature_full_width' );
+					the_post_thumbnail( 'happypress_happybase_theme_post_feature_full_width' );
 				}
 				else { ?>
-					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to ', 'base' ) . '%s', the_title_attribute( 'echo=0' ) ) ); ?>">
-						<?php the_post_thumbnail( 'happypress_base_theme_post_feature_full_width' ); ?>
+					<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to ', 'happybase' ) . '%s', the_title_attribute( 'echo=0' ) ) ); ?>">
+						<?php the_post_thumbnail( 'happypress_happybase_theme_post_feature_full_width' ); ?>
 					</a>
 				<?php }
 			} // has_post_thumbnail() && !is_search() ?>
@@ -44,17 +44,17 @@
 			<div class="entry-content">
 				<?php if ( has_excerpt() && !is_single() ) {
 					the_excerpt(); ?>
-					<p><a class="more-link" href="<?php the_permalink(); ?>"><?php echo wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'base' ), array( 'span' => array(
+					<p><a class="more-link" href="<?php the_permalink(); ?>"><?php echo wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'happybase' ), array( 'span' => array(
 						'class' => array() ) ) ) ?></a></p>
 				<?php }
 				else {
-					the_content( wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'base' ), array( 'span' => array(
+					the_content( wp_kses( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'happybase' ), array( 'span' => array(
 						'class' => array() ) ) )
 						);
 				}
 				 ?>
 				<?php wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'base' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'happybase' ),
 					'after' => '</div>',
 					'link_before' => '<span class="page-numbers">',
 					'link_after' => '</span>'
@@ -65,9 +65,9 @@
 		<footer class="entry-meta">
 			<?php if ( is_singular() ) {
 				// Only show the tags on the Single Post page
-				happypressbase_entry_meta();
+				happybase_entry_meta();
 			} ?>
-			<?php edit_post_link( esc_html__( 'Edit', 'base' ) . ' <i class="fa fa-angle-right" aria-hidden="true"></i>', '<div class="edit-link">', '</div>' ); ?>
+			<?php edit_post_link( esc_html__( 'Edit', 'happybase' ) . ' <i class="fa fa-angle-right" aria-hidden="true"></i>', '<div class="edit-link">', '</div>' ); ?>
 			<?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) {
 				// If a user has filled out their description and this is a multi-author blog, show their bio
 				get_template_part( 'author-bio' );
