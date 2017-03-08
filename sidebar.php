@@ -10,22 +10,22 @@
 
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php
-			do_action( 'happybase_before_sidebar' );
+			do_action('happybase_before_sidebar');
 
-			if ( is_active_sidebar( 'sidebar-1' ) ) {
-				dynamic_sidebar( 'sidebar-1' );
+			if (is_active_sidebar('sidebar-1')) {
+				dynamic_sidebar('sidebar-1');
 			}
 
-			if ( ( is_home() || is_archive() ) && is_active_sidebar( 'sidebar-2' ) ) {
-				dynamic_sidebar( 'sidebar-2' );
+			if ((is_home() || is_archive()) && is_active_sidebar('sidebar-2')) {
+				dynamic_sidebar('sidebar-2');
 			}
 
-			if ( is_single() && is_active_sidebar( 'sidebar-3' ) ) {
-				dynamic_sidebar( 'sidebar-3' );
+			if (is_single() && is_active_sidebar('sidebar-3')) {
+				dynamic_sidebar('sidebar-3');
 			}
 
-			if ( is_page() && is_active_sidebar( 'sidebar-4' ) ) {
-				dynamic_sidebar( 'sidebar-4' );
+			if (is_page() && is_active_sidebar('sidebar-4')) {
+				dynamic_sidebar('sidebar-4');
 			}
 			?>
 

@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<div class="grid-70 tablet-grid-70">
 
-			<?php if ( have_posts() ) : ?>
+			<?php if (have_posts()) : ?>
 
 				<?php
 				// Queue the first post, that way we know what author we're dealing with (if that is the case).
@@ -23,13 +23,13 @@ get_header(); ?>
 
 				<header class="archive-header">
 					<?php
-					the_archive_title( '<h1 class="archive-title">', '</h1>' );
+					the_archive_title('<h1 class="archive-title">', '</h1>');
 					?>
 				</header><!-- .archive-header -->
 
 				<?php // If a user has filled out their description, show a bio on their entries.
-				if ( get_the_author_meta( 'description' ) ) {
-					get_template_part( 'author-bio' );
+				if (get_the_author_meta('description')) {
+					get_template_part('author-bio');
 				} ?>
 
 				<?php
@@ -38,15 +38,15 @@ get_header(); ?>
 				?>
 
 				<?php // Start the Loop ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', get_post_format() ); ?>
+				<?php while (have_posts()) : the_post(); ?>
+					<?php get_template_part('content', get_post_format()); ?>
 				<?php endwhile; ?>
 
-				<?php the_posts_pagination( 'nav-below' ); ?>
+				<?php the_posts_pagination('nav-below'); ?>
 
 			<?php else : ?>
 
-				<?php get_template_part( 'no-results' ); // Include the template that displays a message that posts cannot be found ?>
+				<?php get_template_part('no-results'); // Include the template that displays a message that posts cannot be found ?>
 
 			<?php endif; // end have_posts() check ?>
 
