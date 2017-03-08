@@ -1,5 +1,11 @@
 === HappyBase ===
-Contributors: ahortin
+!https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master!:https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master
+[![Build Status](https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master)](https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master)
+https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master
+{<img src="https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master" alt="Build Status" />}[https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master]
+image:https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master["Build Status", link="https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master"]
+
+Contributors: Team HappyPress
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-logo, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 4.6
