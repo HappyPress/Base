@@ -11,10 +11,10 @@
  */
 ?>
 
-	<?php	do_action( 'happybase_after_woocommerce' ); ?>
+	<?php	do_action('happybase_after_woocommerce'); ?>
 	<div id="footercontainer">
 
-		<?php get_sidebar( 'footer' ); ?>
+		<?php get_sidebar('footer'); ?>
 
 		<div class="grid-container smallprint">
 			<div class="grid-100">

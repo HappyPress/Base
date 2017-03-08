@@ -15,11 +15,11 @@ get_header(); ?>
 	<div id="primary" class="grid-container site-content" role="main">
 		<div class="grid-100">
 
-			<?php if ( have_posts() ) : ?>
+			<?php if (have_posts()) : ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', 'page' ); ?>
-					<?php comments_template( '', true ); ?>
+				<?php while (have_posts()) : the_post(); ?>
+					<?php get_template_part('content', 'page'); ?>
+					<?php comments_template('', true); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			<?php endif; // end have_posts() check ?>
