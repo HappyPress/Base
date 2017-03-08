@@ -1,8 +1,7 @@
 # HappyBase #
 HappyBase WordPress theme. Minimal and Clean.
-<dl>
-<dt>[![Build Status](https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master)](https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master)</dt>
-</dl>
+
+[![Build Status](https://scrutinizer-ci.com/g/HappyPress/HappyBase/badges/build.png?b=master)](https://scrutinizer-ci.com/g/HappyPress/HappyBase/build-status/master)
 
 # WordPress HappyBase Theme by HappyPress#
 <dl>
